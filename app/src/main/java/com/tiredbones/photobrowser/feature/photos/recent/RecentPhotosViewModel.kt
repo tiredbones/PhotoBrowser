@@ -45,6 +45,7 @@ class RecentPhotosViewModel @Inject constructor(
   }
 
   fun onRetryClicked() {
+    showError.value = null
     loading.value = true
     sourceFactory.dataSource.invalidate()
   }

@@ -91,7 +91,7 @@ internal class RecentPhotosViewModelTest {
   @Test
   fun `onRetryClicked should start with loading`() {
     given(getRecentPhotosUseCase.invoke(any(), any())).willReturn(
-        Single.just(list)
+        Single.error(mock<Throwable>())
     )
 
     val testObserver = sut.loading.testObserver()
@@ -104,7 +104,7 @@ internal class RecentPhotosViewModelTest {
   @Test
   fun `onRetryClicked should trigger getRecentPhotosUseCase`() {
     given(getRecentPhotosUseCase.invoke(any(), any())).willReturn(
-        Single.just(list)
+        Single.error(mock<Throwable>())
     )
 
     subscribeToList()
