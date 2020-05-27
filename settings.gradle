@@ -1,0 +1,2 @@
+rootProject.name='Photo Browser'
+include ':app', ':domain', ':logger', ':data'

@@ -1,0 +1,17 @@
+package com.tiredbones.photobrowser.network.response
+
+import com.google.gson.annotations.SerializedName
+
+data class PhotosPagerResponse(
+    @SerializedName("page") val page: Int,
+    @SerializedName("photo") val photo: List<PhotoItemResponse>
+)
+
+data class PhotoItemResponse(
+    @SerializedName("id") val id: String,
+    @SerializedName("owner") val owner: String,
+    @SerializedName("secret") val secret: String,
+    @SerializedName("server") val server: String,
+    @SerializedName("farm") val farm: Int,
+    @SerializedName("title") val title: String
+)

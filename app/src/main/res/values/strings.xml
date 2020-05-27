@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">Photo Browser</string>
+
+  <string name="error_dialog_button_text">Try again</string>
+  <string name="error_dialog_error_message">There are some problems retrieving the data.</string>
+</resources>
